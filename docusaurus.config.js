@@ -7,8 +7,8 @@ const downloadRemoteContent =
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Waku',
-  url: 'https://guide.waku.org/',
+  title: 'Nomos',
+  url: 'https://guide.nomos.tech/',
   baseUrl: '/',
 
   markdown: {
@@ -28,7 +28,7 @@ const config = {
       '@acid-info/logos-docusaurus-preset',
       /** @type {import('@acid-info/logos-docusaurus-preset').PluginOptions} */
       ({
-        businessUnit: 'Waku',
+        businessUnit: 'Nomos',
         customSiteConfig: true,
         theme: {
           name: 'default',
@@ -56,28 +56,25 @@ const config = {
       '@docusaurus/plugin-ideal-image',
       {
         quality: 100,
-        max: 1080,
-        min: 400,
-        steps: 2,
+        sizes: [400],
         disableInDev: true,
       },
     ],
-    (downloadRemoteContent && [
+    downloadRemoteContent && [
       '@acid-info/docusaurus-remote-content',
       /** @type {import('@acid-info/docusaurus-remote-content').PluginOptions} */
       ({
         remote: {
           type: 'zip',
-          url:
-            'https://github.com/acid-info/guide.logos.co/archive/refs/heads/develop.zip',
+          url: 'https://github.com/acid-info/guide.logos.co/archive/refs/heads/develop.zip',
           dir: 'guide.logos.co-develop',
         },
         outDir: 'docs',
         sourceDir: 'docs',
         keepLocal: ['./visual-language/logo.mdx'],
-        keepStatic: ['waku/**/*'],
+        keepStatic: ['nomos/**/*'],
       }),
-    ]),
+    ],
   ],
 
   themes: [
@@ -102,25 +99,17 @@ const config = {
         ],
       },
       footer: {
-        copyright: 'Waku @2023<br/>All Rights Reserved.',
+        copyright: 'Nomos @2023<br/>All Rights Reserved.',
         links: [
           {
             items: [
               {
-                href: 'https://twitter.com/waku_org',
+                href: 'https://twitter.com/Nomos_tech',
                 label: 'Twitter',
               },
               {
-                href: 'https://discord.waku.org/',
+                href: 'https://discord.gg/NYDm83h46b',
                 label: 'Discord',
-              },
-              {
-                href: 'https://docs.waku.org',
-                label: 'Docs',
-              },
-              {
-                href: 'https://github.com/waku-org',
-                label: 'Github',
               },
             ],
           },
