@@ -63,7 +63,8 @@ const config = {
       ({
         remote: {
           type: 'zip',
-          url: 'https://github.com/acid-info/guide.logos.co/archive/refs/heads/develop.zip',
+          url:
+            'https://github.com/acid-info/guide.logos.co/archive/refs/heads/develop.zip',
           dir: 'guide.logos.co-develop',
         },
         outDir: 'docs',
@@ -119,6 +120,14 @@ const config = {
               {
                 href: '/terms',
                 label: 'Terms & conditions',
+              },
+              {
+                href: '/privacy-policy',
+                label: 'Privacy Policy',
+              },
+              {
+                href: '/security',
+                label: 'Security',
               },
             ],
           },
