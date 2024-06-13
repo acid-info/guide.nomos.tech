@@ -1,0 +1,15 @@
+{
+    "timestamp": "2024-06-13T06:32:27Z",
+    "git": {
+        "commit": "5cf69a46bbd41add317769231a00c521c32b7a51",
+        "branch": "origin/master",
+        "url": "git@github.com:acid-info/guide.nomos.tech.git"
+    },
+    "build": {
+        "id": "14",
+        "number": "14",
+        "name": "website/guide.nomos.tech",
+        "slave": "linux-01",
+        "url": "https://ci.infra.status.im/job/website/job/guide.nomos.tech/14/"
+    }
+}
